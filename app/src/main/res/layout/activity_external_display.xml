@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button (Arrow Mark) -->
+
+    <!-- External Display Heading -->
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="29dp"
+        android:layout_height="22dp"
+        android:contentDescription="Back Button"
+        android:src="@drawable/back_icon"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Score Feed Heading -->
+
+    <!-- Score Feed Description -->
+
+    <!-- Blue Button - Copy Link -->
+
+    <TextView
+        android:id="@+id/externalDisplayHeading"
+        android:layout_width="282dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentEnd="true"
+        android:text="External Display"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/scoreFeedHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/externalDisplayHeading"
+        android:text="Score Feed"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="84dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/scoreFeedDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreFeedHeading"
+        android:text="Score feed allows you to view current match score online from anywhere in the world. You can view the score in full screen."
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="136dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/copyLinkButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="224dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scoreFeedDescription"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Copy Link"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
